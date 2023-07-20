@@ -30,12 +30,12 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I create my own non-commercial projects. So far, I've been doing
+            I create my own non-commercial projects. So far, I&apos;ve been doing
             them for educational purposes. I approach learning systematically,
             which can be seen on my GitHub profile. The last project I completed
             - FireApp - is a web application that uses technologies such as
             React, Next.js, PostgreSQL and Prisma, used to automate some
-            processes that are still done on paper in my work. Recently I've
+            processes that are still done on paper in my work. Recently I&apos;ve
             learned how to create REST API on AWS. I would like to use my gained
             skills on the commercial market.
           </motion.p>
