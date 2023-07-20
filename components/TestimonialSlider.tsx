@@ -1,4 +1,6 @@
 // testimonial data
+import React from 'react'
+
 const testimonialData = [
   {
     image: '/t-avt-1.png',

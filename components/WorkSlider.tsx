@@ -1,3 +1,5 @@
+import React from 'react'
+
 // data
 const workSlides = {
   slides: [

@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa'
 import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si'
 
@@ -9,18 +10,20 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          { Icon: FaHtml5, key: 'html' },
+          { Icon: FaCss3, key: 'css' },
+          { Icon: FaJs, key: 'js' },
+          { Icon: FaReact, key: 'react' },
+          { Icon: SiNextdotjs, key: 'next' },
+          { Icon: SiFramer, key: 'framer' },
+          { Icon: FaWordpress, key: 'wordpress' },
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [{ Icon: FaFigma, key: 'figma' },
+        { Icon: SiAdobexd, key: 'adobexd' },
+        { Icon: SiAdobephotoshop, key: 'photoshop' },],
       },
     ],
   },
@@ -74,7 +77,9 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>About</div>
+  )
 };
 
 export default About;
