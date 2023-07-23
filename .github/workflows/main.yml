@@ -1,9 +1,10 @@
-name: Node.js CI
+name: Build
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -11,15 +12,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.16.1'
+          node-version: 18.x
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js app
-        run: npm run build
+      - name: Lint
+        run: npm run lint
