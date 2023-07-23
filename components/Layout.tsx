@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 import { Sora } from "@next/font/google";
 
 const sora = Sora({
@@ -17,7 +17,9 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`page bg-site text-white bg-cover bg-no-repea ${sora.variable} font-sora relative`}>
+    <div
+      className={`page bg-site text-white bg-cover bg-no-repea ${sora.variable} font-sora relative`}
+    >
       <TopLeftImg />
       <Nav />
       <Header />
