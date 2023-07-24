@@ -31,14 +31,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I create my own non-commercial projects. So far, I&apos;ve been doing
-            them for educational purposes. I approach learning systematically,
-            which can be seen on my GitHub profile. The last project I completed
-            - FireApp - is a web application that uses technologies such as
-            React, Next.js, PostgreSQL and Prisma, used to automate some
-            processes that are still done on paper in my work. Recently I&apos;ve
-            learned how to create REST API on AWS. I would like to use my gained
-            skills on the commercial market.
+            Beginner programmer with great ambitions.
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
@@ -63,7 +56,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{duration: 1, ease: 'easeInOut'}}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-2 lg:right-[8%]"
+          className="w-full h-full max-w-[537px] max-h-[678px] absolute -bottom-32 lg:-bottom-40 lg:right-[12%]"
         >
           <Avatar />
         </motion.div>
