@@ -22,12 +22,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#141021',
+        primary: '#111',
         secondary: '#393A47',
         accent: '#F13024',
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
+        explosion: 'url("/bg.jpg")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
