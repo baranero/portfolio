@@ -75,6 +75,10 @@ const aboutData: AboutDataItem[] = [
     title: "experience",
     info: [
       {
+        title: "Firefighter",
+        stage: "2019 - present",
+      },
+      {
         title: "Fire Safety Systems Designer",
         stage: "2019 - present",
       },
