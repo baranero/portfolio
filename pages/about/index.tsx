@@ -86,7 +86,7 @@ const aboutData: AboutDataItem[] = [
   },
 ];
 
-import AvatarFire from "../../components/AvatarFire";
+import AvatarRam from "../../components/AvatarRam";
 import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
@@ -109,7 +109,7 @@ const About = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
         className="hidden xl:flex w-full h-full max-w-[537px] max-h-[537px] -bottom-2 absolute lg:right-[8%]"
       >
-        <AvatarFire />
+        <AvatarRam />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row  mt-10 gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
