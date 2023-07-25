@@ -97,8 +97,10 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full w-full bg-primary/30 overflow-y-scroll lg:overflow-hidden xl:overflow-hidden py-32 text-center xl:text-left">
-      <Circles />
+    <div className="h-full bg-primary/30 overflow-y-scroll py-32 text-center xl:text-left">
+      <div className="hidden lg:flex xl:flex">
+        <Circles />
+      </div>
       <motion.div
         variants={fadeIn("up", 0.5)}
         initial="hidden"
