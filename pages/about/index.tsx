@@ -19,7 +19,7 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiAmazonaws,
-  SiPrisma
+  SiPrisma,
 } from "react-icons/si";
 
 type SkillSection = {
@@ -35,7 +35,7 @@ type ExperienceSection = {
   info: {
     title: string;
     stage: string;
-  }[]
+  }[];
 };
 
 type AboutDataItem = SkillSection | ExperienceSection;
@@ -53,7 +53,6 @@ const aboutData: AboutDataItem[] = [
           { icon: FaReact, key: "react" },
           { icon: SiRedux, key: "redux" },
           { icon: SiNextdotjs, key: "next" },
-
         ],
       },
       {
@@ -68,9 +67,7 @@ const aboutData: AboutDataItem[] = [
       },
       {
         title: "UI/UX Design",
-        icons: [
-          { icon: FaFigma, key: "figma" },
-        ],
+        icons: [{ icon: FaFigma, key: "figma" }],
       },
     ],
   },
@@ -83,13 +80,13 @@ const aboutData: AboutDataItem[] = [
       },
       {
         title: "My own GitHub",
-        stage: "2022 - present"
-      }
+        stage: "2022 - present",
+      },
     ],
   },
 ];
 
-import Avatar from "../../components/Avatar";
+import AvatarFire from "../../components/AvatarFire";
 import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
@@ -98,29 +95,69 @@ import { IconType } from "react-icons/lib";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
-  
+
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full w-full bg-primary/30 overflow-y-scroll lg:overflow-hidden xl:overflow-hidden py-32 text-center xl:text-left">
       <Circles />
       <motion.div
-        variants={fadeIn("right", 0.2)}
+        variants={fadeIn("up", 0.5)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="hidden xl:flex w-full h-full max-w-[537px] max-h-[537px] -bottom-2 absolute lg:right-[8%]"
       >
-        <Avatar />
+        <AvatarFire />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row mt-10 gap-x-6">
-        <div className="flex-1 flex flex-col justify-center">text</div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row  mt-10 gap-x-6">
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
+            A little bit <span className="text-accent">about me</span>
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            I create my own non-commercial projects. So far, I&apos;ve been
+            doing them for educational purposes. I approach learning
+            systematically, which can be seen on my GitHub profile. The last
+            project I completed - FireApp - is a web application that uses
+            technologies such as React, Next.js, PostgreSQL and Prisma, used to
+            automate some processes that are still done on paper in my work.
+            Recently I&apos;ve learned how to create REST API on AWS. I would
+            like to use my gained skills on the commercial market. I work as a
+            Captain Officer in Fire Department and designer of fire safety
+            systems. My experience is not directly connected to programming but
+            it taught me several crucial abilities required in every business. I
+            know how to properly manage projects, how to meet deadlines and work
+            with clients.
+          </motion.p>
+        </div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  className={`${
+                    index === itemIndex &&
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]  after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -128,20 +165,26 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start pb-32">
             {aboutData[index].info.map((item, itemIndex) => {
-              if ('stage' in item) {
+              if ("stage" in item) {
                 return (
-                  <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60" key={itemIndex}>
+                  <div
+                    className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                    key={itemIndex}
+                  >
                     <div className="font-light mb-2 md:mb-0">{item.title}</div>
                     <div className="hidden md:flex">-</div>
                     <div className="">{item.stage}</div>
                   </div>
-                )
+                );
               }
-              
+
               return (
-                <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60" key={itemIndex}>
+                <div
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  key={itemIndex}
+                >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div className="flex gap-x-4">
@@ -158,7 +201,7 @@ const About = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

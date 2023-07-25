@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import ParticleContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
-import Avatar from "../components/Avatar";
+import AvatarGorilla from "../components/AvatarGorilla";
 
 import { motion } from "framer-motion";
 
@@ -19,10 +19,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 z-10"
+            className="h1 mt-10 z-10"
           >
-            Hire me or You <br />
-            meet my <span className="text-accent">Friend</span>
+            I will put out any <br />
+            fire <span className="text-accent">in the code</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute translate-z-0"></div>
+        <div className="bg-none xl:opacity-70 xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute translate-z-0"></div>
         <ParticleContainer />
         <motion.div
           variants={fadeIn("up", 0.5)}
@@ -56,9 +56,9 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[537px] max-h-[678px] absolute -bottom-32 lg:-bottom-40 lg:right-[12%]"
+          className="w-full h-full max-w-[537px] max-h-[537px] bottom-0 absolute lg:right-[12%]"
         >
-          <Avatar />
+          <AvatarGorilla />
         </motion.div>
       </div>
     </div>
