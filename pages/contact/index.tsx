@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import Circles from "../../components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+
+interface ContactFormProps extends React.HTMLProps<HTMLFormElement> {
+  netlify?: boolean;
+}
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,20 +15,20 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
   const encode = (data: any) => {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    
     fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -33,6 +36,7 @@ const Contact = () => {
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
+      event.preventDefault();
   };
 
   return (
@@ -48,17 +52,12 @@ const Contact = () => {
           >
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
-          <motion.div
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-          >
+          <div>
             <form
               className="flex-1 flex flex-col gap-6 w-full mx-auto"
-              // Use the data-netlify attribute to enable Netlify Forms
-              data-netlify="true"
               onSubmit={handleSubmit}
+              method="POST"
+              data-netlify="true"
             >
               <div className="flex gap-x-6 w-full">
                 <input
@@ -103,7 +102,7 @@ const Contact = () => {
                 <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
               </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
