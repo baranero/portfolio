@@ -23,12 +23,13 @@ const Contact = () => {
 
   const encode = (data: any) => {
     return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
       .join("&");
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    
     fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -36,7 +37,7 @@ const Contact = () => {
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
-      event.preventDefault();
+    event.preventDefault();
   };
 
   return (
@@ -54,6 +55,10 @@ const Contact = () => {
           </motion.h2>
           <div>
             <motion.form
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
               className="flex-1 flex flex-col gap-6 w-full mx-auto"
               onSubmit={handleSubmit}
               name="contact"
