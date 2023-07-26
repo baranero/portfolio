@@ -101,7 +101,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 overflow-y-scroll py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-24 lg:flex xl:flex lg:items-center xl:items-center overflow-y-scroll md:overflow-hidden lg:overflow-hidden xl:overflow-hidden text-center xl:text-left">
       <div className="hidden lg:flex xl:flex">
         <Circles />
       </div>
