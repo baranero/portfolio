@@ -131,21 +131,47 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
-            I create my own non-commercial projects. So far, I&apos;ve been
-            doing them for educational purposes. I approach learning
-            systematically, which can be seen on my GitHub profile. The last
-            project I completed - FireApp - is a web application that uses
-            technologies such as React, Next.js, PostgreSQL and Prisma, used to
-            automate some processes that are still done on paper in my work.
-            Recently I&apos;ve learned how to create REST API on AWS. I would
-            like to use my gained skills on the commercial market. I work as a
-            Captain Officer in Fire Department and designer of fire safety
-            systems. My experience is not directly connected to programming but
-            it taught me several crucial abilities required in every business. I
-            know how to properly manage projects, how to meet deadlines and work
-            with clients.
+            A year ago I started learning programming. All progress is visible
+            on GitHub. These are non-commercial projects that were created by me
+            as a summary of the knowledge gained so far.
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
+          >
+            After mastering HTML, CSS and JavaScript, I chose the React library.
+            Continuing the learning process, I went further, coming across
+            technologies such as: TypeScript, Next.js, Redux, Tailwind CSS,
+            Prisma, Node.js.
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
+          >
+            I know how important automation is in the software development
+            process, which is why I recently focused on CI/CD, specifically
+            GitHub Actions. Cloud services also caught my attention. To learn
+            the technology, I created a simple REST API on AWS.
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
+          >
+            My biggest project is FireApp. This is an app that I use every day
+            in my current job. Its task is to automate some activities,
+            specifically access to information about overtime worked and
+            holidays used by my subordinates.
           </motion.p>
         </div>
         <motion.div

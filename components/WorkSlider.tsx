@@ -6,41 +6,52 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'FireApp',
+          path: '/fireapp.png',
+          url: 'https://fd-app-eight.vercel.app/',
+          github: 'https://github.com/baranero/fd-app'
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'Netflix Clone',
+          path: '/netflix.png',
+          url: 'https://netflix-clone-baranero.vercel.app/',
+          github: 'https://github.com/baranero/netflix-clone'
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: 'Portfolio',
+          path: '/portfolio.png',
+          url: 'https://jakubbaran.dev/',
+          github: 'https://github.com/baranero/portfolio'
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Colors Filter',
+          path: '/colors.png',
+          url: 'https://baranero.github.io/colors-filter/',
+          github: 'https://github.com/baranero/colors-filter'
         },
       ],
     },
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: 'Space',
+          path: '/space-web.png',
+          url: 'https://baranero.github.io/space-web-react-scss/',
+          github: 'https://github.com/baranero/space-web-react-scss'
         },
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: 'Food Order App',
+          path: '/food-order-app.png',
+          url: 'https://baranero.github.io/food-order-app/',
+          github: 'https://github.com/baranero/food-order-app'
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: 'Simon Game',
+          path: '/simon-game.png',
+          url: 'https://baranero.github.io/simon-game/',
+          github: 'https://github.com/baranero/simon-game'
         },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
+
       ],
     },
   ],
@@ -55,6 +66,7 @@ import { Pagination } from 'swiper'
 
 import { BsArrowRight } from 'react-icons/bs'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const WorkSlider = () => {
   return <Swiper 
@@ -75,18 +87,35 @@ const WorkSlider = () => {
                 <div className='flex items-center justify-center relative overflow-hidden group '>
                   <Image src={image.path} width={500} height={300} alt=''/>
                   <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
-                  <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                    <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                      <div className='delay-100'>
-                        LIVE
+                  <div className='absolute hover:text-[#b6b6b6] bottom-0 translate-y-full group-hover:-translate-y-16 group-hover:xl:-translate-y-28 group-hover:md:-translate-y-28 group-hover:lg:-translate-y-32  transition-all duration-300'>
+                    <Link className='' href={image.github}>
+                      <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                        <div className='delay-100'>
+                          GITHUB
+                        </div>
+                        <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                          REPO
+                        </div>
+                        <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                          <BsArrowRight/>
+                        </div>
                       </div>
-                      <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
-                        PROJECT
+                    </Link>
+                  </div>
+                  <div className='absolute hover:text-[#b6b6b6]  bottom-0 translate-y-full group-hover:-translate-y-4 group-hover:lg:-translate-y-12  group-hover:xl:-translate-y-12 group-hover:md:-translate-y-12 transition-all duration-300'>
+                    <Link href={image.url}>
+                      <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                        <div className='delay-100'>
+                          LIVE
+                        </div>
+                        <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                          PROJECT
+                        </div>
+                        <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                          <BsArrowRight/>
+                        </div>
                       </div>
-                      <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
-                        <BsArrowRight/>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

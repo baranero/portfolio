@@ -4,7 +4,6 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import {
-  RxCrop,
   RxPencil2,
   RxDesktop,
   RxReader,
@@ -15,31 +14,27 @@ import { FreeMode, Pagination } from 'swiper'
 
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "I craft stunning and intuitive interfaces to captivate users and elevate your brand's visual appeal.",
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "I build responsive websites and web apps to bring your ideas to life with cutting-edge technology.",
   },
   {
     icon: <RxReader />,
     title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Engaging, SEO-friendly content that effectively communicates your message and drives audience action.",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Improving visibility and organic traffic through strategic optimization and keyword research.",
   },
 ];
+
 
 const ServiceSlider = () => {
   return <Swiper breakpoints={{
