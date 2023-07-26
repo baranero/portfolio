@@ -53,9 +53,10 @@ const Contact = () => {
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
           <div>
-            <form
+            <motion.form
               className="flex-1 flex flex-col gap-6 w-full mx-auto"
               onSubmit={handleSubmit}
+              name="contact"
               method="POST"
               data-netlify="true"
             >
@@ -101,7 +102,7 @@ const Contact = () => {
                 </span>
                 <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
               </button>
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>
