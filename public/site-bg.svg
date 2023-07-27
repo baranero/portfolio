@@ -1,7 +1,9 @@
 <svg width="1435" height="877" viewBox="0 0 1435 877" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_157_2)">
 <rect width="1435" height="877" fill="#111"/>
-
+<g filter="url(#filter0_f_157_2)">
+<circle cx="0" cy="300" r="100" fill="#ffce00"/>
+</g>
 <g filter="url(#filter1_f_157_2)">
 <circle cx="1299" cy="142" r="178" fill="#ff9a0080"/>
 </g>
