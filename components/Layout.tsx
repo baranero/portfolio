@@ -21,7 +21,9 @@ const Layout = ({ children }: LayoutProps) => {
       className={`page bg-site text-white bg-cover bg-no-repea ${sora.variable} font-sora relative`}
     >
       <Header />
-      <TopLeftImg />
+      <div className="hidden md:block lg:block xl:block">
+        <TopLeftImg />
+      </div>
       <Nav />
 
       {children}
