@@ -111,7 +111,7 @@ const About = () => {
         animate="show"
         exit="hidden"
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="hidden xl:flex w-full h-full max-w-[537px] max-h-[537px] -bottom-2 absolute lg:right-[8%]"
+        className="hidden xl:flex w-full h-full max-w-[437px] max-h-[437px] -bottom-2 absolute lg:right-[8%]"
       >
         <AvatarRam />
       </motion.div>
@@ -142,7 +142,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
+            className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
             After mastering HTML, CSS and JavaScript, I chose the React library.
             Continuing the learning process, I went further, coming across
