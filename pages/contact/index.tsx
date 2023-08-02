@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-
-interface ContactFormProps extends React.HTMLProps<HTMLFormElement> {
-  netlify?: boolean;
-}
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,7 +52,8 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center mb-12"
           >
-            Let&apos;s <span className="text-accent">connect.</span>
+            {t("contact.titleFirst")}{" "}
+            <span className="text-accent">{t("contact.titleSecond")}</span>
           </motion.h2>
           <div>
             <motion.form
@@ -68,7 +70,7 @@ const Contact = () => {
               <div className="flex gap-x-6 w-full">
                 <input
                   type="text"
-                  placeholder="name"
+                  placeholder={t("contact.name")}
                   className="input"
                   name="name"
                   value={formData.name}
@@ -76,7 +78,7 @@ const Contact = () => {
                 />
                 <input
                   type="text"
-                  placeholder="email"
+                  placeholder={t("contact.email")}
                   className="input"
                   name="email"
                   value={formData.email}
@@ -85,14 +87,14 @@ const Contact = () => {
               </div>
               <input
                 type="text"
-                placeholder="subject"
+                placeholder={t("contact.subject")}
                 className="input"
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
               />
               <textarea
-                placeholder="message"
+                placeholder={t("contact.message")}
                 className="textarea"
                 name="message"
                 value={formData.message}
@@ -103,7 +105,7 @@ const Contact = () => {
                 className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
               >
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                  Let&apos;s talk
+                  {t("contact.button")}
                 </span>
                 <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
               </button>
@@ -116,3 +118,13 @@ const Contact = () => {
 };
 
 export default Contact;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const currentLocale = locale || "en";
+
+  return {
+    props: {
+      ...(await serverSideTranslations(currentLocale, ["common"])),
+    },
+  };
+};

@@ -5,8 +5,13 @@ import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const Work = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="h-full bg-primary/30 py-24 lg:flex xl:flex lg:items-center xl:items-center overflow-y-scroll xl:overflow-hidden">
       <div className="hidden lg:flex xl:flex">
@@ -22,17 +27,16 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My work <span className="text-accent">.</span>
+              {t("works.title")} <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto text-justify lg:mx-0"
             >
-              Projects that were created by me as a summary of the learning
-              process.
+              {t("works.description")}
             </motion.p>
           </div>
 
@@ -53,3 +57,13 @@ const Work = () => {
 };
 
 export default Work;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const currentLocale = locale || "en";
+
+  return {
+    props: {
+      ...(await serverSideTranslations(currentLocale, ["common"])),
+    },
+  };
+};

@@ -1,0 +1,62 @@
+{
+    "home": {
+        "welcomeFirst": "I will put out any",
+        "welcomeSecond": "fire ",
+        "welcomeThird": "in the code",
+        "description": "Beginner programmer with great ambitions."
+    },
+    "navbar": {
+        "home": "home",
+        "about": "about",
+        "services": "services",
+        "work": "work",
+        "contact": "contact"
+    },
+    "about": {
+        "titleFirst": " A little bit ",
+        "titleSecond": "about me",
+        "descriptionFirst": "A year ago I started learning programming. All progress is visible on GitHub. These are non-commercial projects that were created by me as a summary of the knowledge gained so far.",
+        "descriptionSecond": "After mastering HTML, CSS and JavaScript, I chose the React library. Continuing the learning process, I went further, coming across technologies such as: TypeScript, Next.js, Redux, Tailwind CSS, Prisma, Node.js.",
+        "descriptionThird": "I know how important automation is in the software development process, which is why I recently focused on CI/CD, specifically GitHub Actions. Cloud services also caught my attention. To learn the technology, I created a simple REST API on AWS.",
+        "descriptionFourth": "My biggest project is FireApp. This is an app that I use every day in my current job. Its task is to automate some activities, specifically access to information about overtime worked and holidays used by my subordinates.",
+        "skills": "Skills",
+        "experience": "Experience",
+        "firefighter": "Firefighter",
+        "fireStage": "2019 - present",
+        "designer": "Fire Safety Systems Designer",
+        "designerStage": "2019 - present",
+        "github": "My own GitHub",
+        "githubStage": "2022 - present"
+    },
+    "services": {
+        "title": "My services",
+        "description": "I offer a range of web development solutions tailored to your needs, including responsive website design, user-friendly interfaces, SEO optimization, persuasive copywriting, and distinctive branding. Together, we can bring your ideas to life, engage your target audience, and boost your online presence for long-term success."
+    },
+    "servicesSlider": {
+        "design": "Design",
+        "designDescription": "I craft stunning and intuitive interfaces to captivate users and elevate your brand's visual appeal.",
+        "development": "Development",
+        "developmentDescription": "I build responsive websites and web apps to bring your ideas to life with cutting-edge technology.",
+        "copywriting": "Copywriting",
+        "copywritingDescription": "Engaging, SEO-friendly content that effectively communicates your message and drives audience action.",
+        "seo": "SEO",
+        "seoDescription": "Improving visibility and organic traffic through strategic optimization and keyword research."
+    },
+    "works": {
+        "title": "My works",
+        "description": "Projects that were created by me as a summary of the learning process."
+    },
+    "worksSlider": {
+        "live": "LIVE",
+        "project": "PROJECT"
+    },
+    "contact": {
+        "titleFirst": "Let's ",
+        "titleSecond": "connect.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "button": "Let's talk"
+    }
+}

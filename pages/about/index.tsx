@@ -2,17 +2,12 @@ import React, { useState } from "react";
 import {
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
   SiTypescript,
   SiRedux,
   SiPostgresql,
@@ -40,65 +35,70 @@ type ExperienceSection = {
 
 type AboutDataItem = SkillSection | ExperienceSection;
 
-const aboutData: AboutDataItem[] = [
-  {
-    title: "skills",
-    info: [
-      {
-        title: "Frontend",
-        icons: [
-          { icon: FaHtml5, key: "html" },
-          { icon: FaCss3, key: "css" },
-          { icon: SiTypescript, key: "ts" },
-          { icon: FaReact, key: "react" },
-          { icon: SiRedux, key: "redux" },
-          { icon: SiNextdotjs, key: "next" },
-        ],
-      },
-      {
-        title: "Backend",
-        icons: [
-          { icon: SiNodedotjs, key: "node" },
-          { icon: SiAmazonaws, key: "aws" },
-          { icon: SiPostgresql, key: "postgre" },
-          { icon: SiMongodb, key: "mongo" },
-          { icon: SiPrisma, key: "prisma" },
-        ],
-      },
-      {
-        title: "UI/UX Design",
-        icons: [{ icon: FaFigma, key: "figma" }],
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "Firefighter",
-        stage: "2019 - present",
-      },
-      {
-        title: "Fire Safety Systems Designer",
-        stage: "2019 - present",
-      },
-      {
-        title: "My own GitHub",
-        stage: "2022 - present",
-      },
-    ],
-  },
-];
-
 import AvatarRam from "../../components/AvatarRam";
 import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { IconType } from "react-icons/lib";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const About = () => {
   const [index, setIndex] = useState(0);
+
+  const { t } = useTranslation();
+
+  const aboutData: AboutDataItem[] = [
+    {
+      title: t("about.skills"),
+      info: [
+        {
+          title: "Frontend",
+          icons: [
+            { icon: FaHtml5, key: "html" },
+            { icon: FaCss3, key: "css" },
+            { icon: SiTypescript, key: "ts" },
+            { icon: FaReact, key: "react" },
+            { icon: SiRedux, key: "redux" },
+            { icon: SiNextdotjs, key: "next" },
+          ],
+        },
+        {
+          title: "Backend",
+          icons: [
+            { icon: SiNodedotjs, key: "node" },
+            { icon: SiAmazonaws, key: "aws" },
+            { icon: SiPostgresql, key: "postgre" },
+            { icon: SiMongodb, key: "mongo" },
+            { icon: SiPrisma, key: "prisma" },
+          ],
+        },
+        {
+          title: "UI/UX Design",
+          icons: [{ icon: FaFigma, key: "figma" }],
+        },
+      ],
+    },
+    {
+      title: t("about.experience"),
+      info: [
+        {
+          title: t("about.firefighter"),
+          stage: t("about.fireStage"),
+        },
+        {
+          title: t("about.designer"),
+          stage: t("about.designerStage"),
+        },
+        {
+          title: t("about.github"),
+          stage: t("about.githubStage"),
+        },
+      ],
+    },
+  ];
 
   return (
     <div className="h-full bg-primary/30 py-24 lg:flex xl:flex lg:items-center xl:items-center overflow-y-scroll md:overflow-hidden lg:overflow-hidden xl:overflow-hidden text-center xl:text-left">
@@ -124,7 +124,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            A little bit <span className="text-accent">about me</span>
+            {t("about.titleFirst")}{" "}
+            <span className="text-accent">{t("about.titleSecond")}</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -133,9 +134,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
-            A year ago I started learning programming. All progress is visible
-            on GitHub. These are non-commercial projects that were created by me
-            as a summary of the knowledge gained so far.
+            {t("about.descriptionFirst")}
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -144,10 +143,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
-            After mastering HTML, CSS and JavaScript, I chose the React library.
-            Continuing the learning process, I went further, coming across
-            technologies such as: TypeScript, Next.js, Redux, Tailwind CSS,
-            Prisma, Node.js.
+            {t("about.descriptionSecond")}
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -156,10 +152,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
-            I know how important automation is in the software development
-            process, which is why I recently focused on CI/CD, specifically
-            GitHub Actions. Cloud services also caught my attention. To learn
-            the technology, I created a simple REST API on AWS.
+            {t("about.descriptionThird")}
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -168,10 +161,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] xl:text-justify mx-auto xl:mx-0 mb-6 xl:mb-2 px-2 xl:px-0"
           >
-            My biggest project is FireApp. This is an app that I use every day
-            in my current job. Its task is to automate some activities,
-            specifically access to information about overtime worked and
-            holidays used by my subordinates.
+            {t("about.descriptionFourth")}
           </motion.p>
         </div>
         <motion.div
@@ -240,3 +230,13 @@ const About = () => {
 };
 
 export default About;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const currentLocale = locale || "en";
+
+  return {
+    props: {
+      ...(await serverSideTranslations(currentLocale, ["common"])),
+    },
+  };
+};

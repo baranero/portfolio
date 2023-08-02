@@ -1,5 +1,5 @@
-import React from 'react'
-import { delay, motion } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 const transitionVariants = {
   initial: {
@@ -26,9 +26,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
-      >
-        
-      </motion.div>
+      ></motion.div>
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#2d2158]"
         variants={transitionVariants}
@@ -36,9 +34,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
-      >
-        
-      </motion.div>
+      ></motion.div>
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#c089404e]"
         variants={transitionVariants}
@@ -46,9 +42,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
-      >
-        
-      </motion.div>
+      ></motion.div>
     </>
   );
 };

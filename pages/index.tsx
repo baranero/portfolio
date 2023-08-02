@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import ParticleContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -9,7 +8,14 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
+import { GetStaticProps } from "next";
+
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-primary/60 h-full">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
@@ -21,8 +27,9 @@ const Home = () => {
             exit="hidden"
             className="h1 mt-10 z-10"
           >
-            I will put out any <br />
-            fire <span className="text-accent">in the code</span>
+            {t("home.welcomeFirst")} <br />
+            {t("home.welcomeSecond")}{" "}
+            <span className="text-accent">{t("home.welcomeThird")}</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -31,7 +38,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm z-10 xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Beginner programmer with great ambitions.
+            {t("home.description")}
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
@@ -66,3 +73,13 @@ const Home = () => {
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const currentLocale = locale || "en";
+
+  return {
+    props: {
+      ...(await serverSideTranslations(currentLocale, ["common"])),
+    },
+  };
+};

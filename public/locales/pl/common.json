@@ -1,0 +1,62 @@
+{
+    "home": {
+        "welcomeFirst": "Ugaszę każdy ",
+        "welcomeSecond": "pożar ",
+        "welcomeThird": "w kodzie",
+        "description": "Początkujący programista z wielkimi ambicjami."
+    },
+    "navbar": {
+        "home": "strona główna",
+        "about": "o mnie",
+        "services": "usługi",
+        "work": "realizacje",
+        "contact": "kontakt"
+    },
+    "about": {
+        "titleFirst": " Trochę ",
+        "titleSecond": "o mnie",
+        "descriptionFirst": "Rok temu zacząłem uczyć się programowania. Cały postęp jest widoczny na GitHub. Są to projekty niekomercyjne, które zostały stworzone przeze mnie jako podsumowanie zdobytej do tej pory wiedzy.",
+        "descriptionSecond": "Po opanowaniu HTML, CSS i JavaScript wybrałem bibliotekę React. Kontynuując proces nauki poszedłem dalej, natrafiając na takie technologie jak: TypeScript, Next.js, Redux, Tailwind CSS, Prisma, Node.js.",
+        "descriptionThird": "Wiem, jak ważna jest automatyzacja w procesie tworzenia oprogramowania, dlatego ostatnio skupiłem się na CI/CD, a konkretnie GitHub Actions. Moją uwagę przykuły również usługi w chmurze. Aby poznać technologię, stworzyłem proste REST API na AWS.",
+        "descriptionFourth": "Moim największym projektem jest FireApp. Jest to aplikacja, z której korzystam na co dzień w mojej obecnej pracy. Jego zadaniem jest automatyzacja niektórych czynności, a konkretnie dostęp cyfrowy do informacji o przepracowanych nadgodzinach i urlopach wykorzystanych przez moich podwładnych.",
+        "skills": "Umiejętności",
+        "experience": "Doświadczenie",
+        "firefighter": "Strażak",
+        "fireStage": "2019 - obecnie",
+        "designer": "Projektant systemów przeciwpożarowych",
+        "designerStage": "2019 - obecnie",
+        "github": "Mój własny GitHub",
+        "githubStage": "2022 - obecnie"
+    },
+    "services": {
+        "title": "Moje usługi",
+        "description": "Oferuję szereg rozwiązań do tworzenia stron internetowych dostosowanych do Twoich potrzeb, w tym responsywne projektowanie stron internetowych, przyjazne dla użytkownika interfejsy, optymalizację SEO, przekonujący copywriting i wyróżniający się branding. Razem możemy ożywić Twoje pomysły, zaangażować docelowych odbiorców i zwiększyć Twoją obecność w Internecie, aby osiągnąć długoterminowy sukces."
+    },
+    "servicesSlider": {
+        "design": "Design",
+        "designDescription": "Oszałamiające i intuicyjne interfejsy, aby zniewolić użytkowników i podnieść atrakcyjność wizualną Twojej marki.",
+        "development": "Rozwój aplikacji",
+        "developmentDescription": "Responsywne strony internetowe i aplikacje, aby ożywić Twoje pomysły dzięki nowoczesnej technologii.",
+        "copywriting": "Copywriting",
+        "copywritingDescription": "Angażujące, przyjazne dla SEO treści, które skutecznie komunikują Twoją wiadomość i napędzają działania odbiorców.",
+        "seo": "SEO",
+        "seoDescription": "Poprawa widoczności i ruchu organicznego poprzez optymalizację strategiczną i badanie słów kluczowych."
+    },
+    "works": {
+        "title": "Moje realizacje",
+        "description": "Projekty, które zostały stworzone przeze mnie jako podsumowanie procesu uczenia się."
+    },
+    "worksSlider": {
+        "live": "NA",
+        "project": "ŻYWO"
+    },
+    "contact": {
+        "titleFirst": "Skontaktuj się ",
+        "titleSecond": "ze mną.",
+        "name": "Imię i nazwisko",
+        "email": "Email",
+        "subject": "Temat",
+        "message": "Wiadomość",
+        "button": "Porozmawiajmy"
+    }
+}

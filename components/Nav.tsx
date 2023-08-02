@@ -4,28 +4,34 @@ import {
   HiUser,
   HiRectangleGroup,
   HiViewColumns,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
 
-//  links
-const navData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
-  {
-    name: "contact",
-    path: "/contact",
-    icon: <HiEnvelope />,
-  },
-];
+import { useTranslation } from "next-i18next";
 
 import Link from "next/link";
 
 import { useRouter } from "next/router";
 
 const Nav = () => {
+  const { t } = useTranslation();
+
+  const navData = [
+    { name: t("navbar.home"), path: "/", icon: <HiHome /> },
+    { name: t("navbar.about"), path: "/about", icon: <HiUser /> },
+    {
+      name: t("navbar.services"),
+      path: "/services",
+      icon: <HiRectangleGroup />,
+    },
+    { name: t("navbar.work"), path: "/work", icon: <HiViewColumns /> },
+    {
+      name: t("navbar.contact"),
+      path: "/contact",
+      icon: <HiEnvelope />,
+    },
+  ];
+
   const router = useRouter();
   const pathname = router.pathname;
   return (
@@ -41,8 +47,8 @@ const Nav = () => {
               href={link.path}
             >
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
-                <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
-                  <div className="text-[12px] leading-none font-semibold capitalize">
+                <div className="bg-white relative flex text-primary items-center p-[10px] rounded-[3px]">
+                  <div className="text-[12px] leading-none font-semibold capitalize whitespace-nowrap">
                     {link.name}
                   </div>
                   <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div>
