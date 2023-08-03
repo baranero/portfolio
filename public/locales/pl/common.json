@@ -3,7 +3,7 @@
         "welcomeFirst": "Ugaszę każdy ",
         "welcomeSecond": "pożar ",
         "welcomeThird": "w kodzie",
-        "description": "Początkujący programista z wielkimi ambicjami."
+        "description": "Początkujący programista z wielkimi ambicjami. Tworzę strony internetowe i aplikacje webowe."
     },
     "navbar": {
         "home": "strona główna",
@@ -15,10 +15,10 @@
     "about": {
         "titleFirst": " Trochę ",
         "titleSecond": "o mnie",
-        "descriptionFirst": "Rok temu zacząłem uczyć się programowania. Cały postęp jest widoczny na GitHub. Są to projekty niekomercyjne, które zostały stworzone przeze mnie jako podsumowanie zdobytej do tej pory wiedzy.",
-        "descriptionSecond": "Po opanowaniu HTML, CSS i JavaScript wybrałem bibliotekę React. Kontynuując proces nauki poszedłem dalej, natrafiając na takie technologie jak: TypeScript, Next.js, Redux, Tailwind CSS, Prisma, Node.js.",
-        "descriptionThird": "Wiem, jak ważna jest automatyzacja w procesie tworzenia oprogramowania, dlatego ostatnio skupiłem się na CI/CD, a konkretnie GitHub Actions. Moją uwagę przykuły również usługi w chmurze. Aby poznać technologię, stworzyłem proste REST API na AWS.",
-        "descriptionFourth": "Moim największym projektem jest FireApp. Jest to aplikacja, z której korzystam na co dzień w mojej obecnej pracy. Jego zadaniem jest automatyzacja niektórych czynności, a konkretnie dostęp cyfrowy do informacji o przepracowanych nadgodzinach i urlopach wykorzystanych przez moich podwładnych.",
+        "descriptionFirst": "Rok temu rozpocząłęm naukę programowania. Mój wybór padł na web development.",
+        "descriptionSecond": "Jako podsumowanie moich dotychczasowych umiejętności stworzyłem tą stronę portfolio oraz moją własną aplikację FireApp. Do jej napisania zainspirowała mnie potrzeba digitalizacji niektórych procesów w mojej obecnej pracy.",
+        "descriptionThird": "Wdrażając się bardziej w struktury tworzenia oprogramowania zauważyłem jak ważna jest automatyzacja. Moja uwaga w ostatnim czasie skupiła się na poszerzaniu wiedzy z zakresu CI/CD. Nie przeszedłem również obojętnie obok serwisów chmurowych. Chcąc zbadać ich działanie stworzyłem proste REST API na AWS.",
+        "descriptionFourth": "Moje doświadczenie zawodowe sprawia, że bardzo dobrze dogaduję się ze współpracownikami. Dodatkowo doskonale radzę sobie z dotrzymywaniem terminów, a także prowadzeniem rozmów z inwestorami. Zbierając od nich wymagania wdrażałem je w projekt, aby ostatecznie przekazać klientom gotowy produkt.",
         "skills": "Umiejętności",
         "experience": "Doświadczenie",
         "firefighter": "Strażak",
@@ -30,15 +30,15 @@
     },
     "services": {
         "title": "Moje usługi",
-        "description": "Oferuję szereg rozwiązań do tworzenia stron internetowych dostosowanych do Twoich potrzeb, w tym responsywne projektowanie stron internetowych, przyjazne dla użytkownika interfejsy, optymalizację SEO, przekonujący copywriting i wyróżniający się branding. Razem możemy ożywić Twoje pomysły, zaangażować docelowych odbiorców i zwiększyć Twoją obecność w Internecie, aby osiągnąć długoterminowy sukces."
+        "description": "Tworzę strony internetowe i aplikacje webowe. Gwarantuję Ci pełną responsywność, przyjazny interfejs oraz optymalizację pod SEO. Jeśli potrzebujesz strony internetowej, która przyciągnie Twoich klientów, odezwij się!"
     },
     "servicesSlider": {
         "design": "Design",
-        "designDescription": "Oszałamiające i intuicyjne interfejsy, aby zniewolić użytkowników i podnieść atrakcyjność wizualną Twojej marki.",
+        "designDescription": "Intuicyjne i stylowe interfejsy, które sprawiają, że Twoja strona będzie przyjazna dla użytkownika.",
         "development": "Rozwój aplikacji",
-        "developmentDescription": "Responsywne strony internetowe i aplikacje, aby ożywić Twoje pomysły dzięki nowoczesnej technologii.",
+        "developmentDescription": "Użytkowe strony i w pełni funkcjonalne aplikacje webowe, aby sprostać Twoim wymaganiom.",
         "copywriting": "Copywriting",
-        "copywritingDescription": "Angażujące, przyjazne dla SEO treści, które skutecznie komunikują Twoją wiadomość i napędzają działania odbiorców.",
+        "copywritingDescription": "Treści przyjazne dla SEO, dostosowane do Twoich potrzeb i wymagań.",
         "seo": "SEO",
         "seoDescription": "Poprawa widoczności i ruchu organicznego poprzez optymalizację strategiczną i badanie słów kluczowych."
     },

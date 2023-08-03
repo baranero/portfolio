@@ -15,10 +15,10 @@
     "about": {
         "titleFirst": " A little bit ",
         "titleSecond": "about me",
-        "descriptionFirst": "A year ago I started learning programming. All progress is visible on GitHub. These are non-commercial projects that were created by me as a summary of the knowledge gained so far.",
-        "descriptionSecond": "After mastering HTML, CSS and JavaScript, I chose the React library. Continuing the learning process, I went further, coming across technologies such as: TypeScript, Next.js, Redux, Tailwind CSS, Prisma, Node.js.",
-        "descriptionThird": "I know how important automation is in the software development process, which is why I recently focused on CI/CD, specifically GitHub Actions. Cloud services also caught my attention. To learn the technology, I created a simple REST API on AWS.",
-        "descriptionFourth": "My biggest project is FireApp. This is an app that I use every day in my current job. Its task is to automate some activities, specifically access to information about overtime worked and holidays used by my subordinates.",
+        "descriptionFirst": "A year ago I started learning programming. I chose web development.",
+        "descriptionSecond": "As a summary of my skills so far, I created this portfolio website and my own FireApp. I was inspired to write it by the need to digitize some processes in my current job.",
+        "descriptionThird": "Getting more involved in the structure of software development, I noticed how important automation is. My attention has recently focused on expanding knowledge in the field of CI/CD. I also did not pass by cloud services indifferently. Wanting to test their operation, I created a simple REST API on AWS.",
+        "descriptionFourth": "My professional experience means that I get along very well with my coworkers. In addition, I am excellent at meeting deadlines, as well as conducting talks with investors. Collecting requirements from them, I implemented them in the project to finally hand over the finished product to customers.",
         "skills": "Skills",
         "experience": "Experience",
         "firefighter": "Firefighter",
@@ -30,15 +30,15 @@
     },
     "services": {
         "title": "My services",
-        "description": "I offer a range of web development solutions tailored to your needs, including responsive website design, user-friendly interfaces, SEO optimization, persuasive copywriting, and distinctive branding. Together, we can bring your ideas to life, engage your target audience, and boost your online presence for long-term success."
+        "description": "I create websites and web applications. I guarantee you full responsiveness, friendly interface and optimization for SEO. If you need a website that will attract your customers, get in touch!"
     },
     "servicesSlider": {
         "design": "Design",
-        "designDescription": "I craft stunning and intuitive interfaces to captivate users and elevate your brand's visual appeal.",
+        "designDescription": "Intuitive and stylish interfaces that make your website user-friendly.",
         "development": "Development",
-        "developmentDescription": "I build responsive websites and web apps to bring your ideas to life with cutting-edge technology.",
+        "developmentDescription": "Usable websites and fully functional web applications to meet your requirements.",
         "copywriting": "Copywriting",
-        "copywritingDescription": "Engaging, SEO-friendly content that effectively communicates your message and drives audience action.",
+        "copywritingDescription": "SEO-friendly content tailored to your needs and requirements.",
         "seo": "SEO",
         "seoDescription": "Improving visibility and organic traffic through strategic optimization and keyword research."
     },

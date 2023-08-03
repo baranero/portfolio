@@ -12,12 +12,6 @@ const workSlides = {
           github: "https://github.com/baranero/fd-app",
         },
         {
-          title: "Netflix Clone",
-          path: "/netflix.png",
-          url: "https://netflix-clone-baranero.vercel.app/",
-          github: "https://github.com/baranero/netflix-clone",
-        },
-        {
           title: "Portfolio",
           path: "/portfolio.png",
           url: "https://jakubbaran.dev/",
@@ -29,6 +23,12 @@ const workSlides = {
           url: "https://baranero.github.io/colors-filter/",
           github: "https://github.com/baranero/colors-filter",
         },
+        {
+          title: "Netflix Clone",
+          path: "/netflix.png",
+          url: "https://netflix-clone-baranero.vercel.app/",
+          github: "https://github.com/baranero/netflix-clone",
+        },
       ],
     },
     {
@@ -38,19 +38,7 @@ const workSlides = {
           path: "/space-web.png",
           url: "https://baranero.github.io/space-web-react-scss/",
           github: "https://github.com/baranero/space-web-react-scss",
-        },
-        {
-          title: "Food Order App",
-          path: "/food-order-app.png",
-          url: "https://baranero.github.io/food-order-app/",
-          github: "https://github.com/baranero/food-order-app",
-        },
-        {
-          title: "Simon Game",
-          path: "/simon-game.png",
-          url: "https://baranero.github.io/simon-game/",
-          github: "https://github.com/baranero/simon-game",
-        },
+        }
       ],
     },
   ],
