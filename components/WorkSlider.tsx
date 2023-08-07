@@ -18,17 +18,18 @@ const workSlides = {
           github: "https://github.com/baranero/portfolio",
         },
         {
+          title: "Beauty Salon",
+          path: "/beauty-salon.png",
+          url: "http://wrobelagnieszka.pl/",
+          github: "https://github.com/baranero/beauty-website",
+        },
+        {
           title: "Colors Filter",
           path: "/colors.png",
           url: "https://baranero.github.io/colors-filter/",
           github: "https://github.com/baranero/colors-filter",
         },
-        {
-          title: "Netflix Clone",
-          path: "/netflix.png",
-          url: "https://netflix-clone-baranero.vercel.app/",
-          github: "https://github.com/baranero/netflix-clone",
-        },
+
       ],
     },
     {
@@ -38,7 +39,13 @@ const workSlides = {
           path: "/space-web.png",
           url: "https://baranero.github.io/space-web-react-scss/",
           github: "https://github.com/baranero/space-web-react-scss",
-        }
+        },
+        {
+          title: "Netflix Clone",
+          path: "/netflix.png",
+          url: "https://netflix-clone-baranero.vercel.app/",
+          github: "https://github.com/baranero/netflix-clone",
+        },
       ],
     },
   ],
