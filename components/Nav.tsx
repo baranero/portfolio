@@ -19,11 +19,6 @@ const Nav = () => {
   const navData = [
     { name: t("navbar.home"), path: "/", icon: <HiHome /> },
     { name: t("navbar.about"), path: "/about", icon: <HiUser /> },
-    {
-      name: t("navbar.services"),
-      path: "/services",
-      icon: <HiRectangleGroup />,
-    },
     { name: t("navbar.work"), path: "/work", icon: <HiViewColumns /> },
     {
       name: t("navbar.contact"),

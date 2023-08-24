@@ -35,17 +35,18 @@ const workSlides = {
     {
       images: [
         {
+          title: "giarddesign",
+          path: "/adRespect.png",
+          url: "https://baranero.github.io/adRespect/",
+          github: "https://github.com/baranero/adRespect",
+        },
+        {
           title: "Space",
           path: "/space-web.png",
           url: "https://baranero.github.io/space-web-react-scss/",
           github: "https://github.com/baranero/space-web-react-scss",
         },
-        {
-          title: "Netflix Clone",
-          path: "/netflix.png",
-          url: "https://netflix-clone-baranero.vercel.app/",
-          github: "https://github.com/baranero/netflix-clone",
-        },
+
       ],
     },
   ],
