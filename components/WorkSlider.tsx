@@ -18,35 +18,11 @@ const workSlides = {
           github: "https://github.com/baranero/portfolio",
         },
         {
-          title: "Beauty Salon",
-          path: "/beauty-salon.png",
-          url: "http://wrobelagnieszka.pl/",
-          github: "https://github.com/baranero/beauty-website",
+          title: "Real Estate",
+          path: "/real-estate.png",
+          url: "https://estate-app-kghi.onrender.com/",
+          github: "https://github.com/baranero/estate-app",
         },
-        {
-          title: "Colors Filter",
-          path: "/colors.png",
-          url: "https://baranero.github.io/colors-filter/",
-          github: "https://github.com/baranero/colors-filter",
-        },
-
-      ],
-    },
-    {
-      images: [
-        {
-          title: "giarddesign",
-          path: "/adRespect.png",
-          url: "https://baranero.github.io/adRespect/",
-          github: "https://github.com/baranero/adRespect",
-        },
-        {
-          title: "Space",
-          path: "/space-web.png",
-          url: "https://baranero.github.io/space-web-react-scss/",
-          github: "https://github.com/baranero/space-web-react-scss",
-        },
-
       ],
     },
   ],
