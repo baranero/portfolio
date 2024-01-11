@@ -18,6 +18,22 @@ const workSlides = {
           github: "https://github.com/baranero/portfolio",
         },
         {
+          title: "Admin Dashboard E-commerce",
+          path: "/e-com-admin.png",
+          url: "https://fullstack-e-commerce-beta.vercel.app/",
+          github: "https://github.com/baranero/admin-dashboard-e-commerce",
+        },
+        {
+          title: "Frontend E-commerce",
+          path: "/e-com-front.png",
+          url: "https://frontend-e-commerce-sigma.vercel.app/",
+          github: "https://github.com/baranero/frontend-e-commerce",
+        },
+      ],
+    },
+    {
+      images: [
+        {
           title: "Real Estate",
           path: "/real-estate.png",
           url: "https://estate-app-kghi.onrender.com/",
