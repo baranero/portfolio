@@ -48,7 +48,8 @@
     },
     "worksSlider": {
         "live": "LIVE",
-        "project": "PROJECT"
+        "project": "PROJECT",
+        "stack": "Technology stack:"
     },
     "contact": {
         "titleFirst": "Let's ",

@@ -48,7 +48,8 @@
     },
     "worksSlider": {
         "live": "NA",
-        "project": "ŻYWO"
+        "project": "ŻYWO",
+        "stack": "Technologie:"
     },
     "contact": {
         "titleFirst": "Skontaktuj się ",
